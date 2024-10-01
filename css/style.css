@@ -1,6 +1,185 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    font-family: "montserrat";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+section.logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 70px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+section.menu {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    width: 100%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: yellowgreen;
+}
+
+div.carousel-inner {
+    max-height: 500px;
+    height: 100%;
+}
+
+div.carousel-item>img {
+    max-height: 500px;
+    height: 100%;
+}
+
+div.filtro {
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.300);
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+
+div.title-catalog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: rgb(124, 124, 124);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.title-catalog h2 {
+    color: white;
+}
+
+div.modelos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(124, 124, 124);
+    padding: 10px;
+    padding-top: 40px;
+}
+
+div.modelo-item {
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.modelo-item img {
+    width: 150px;
+    height: 150px;
+}
+
+.model-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.model-description h3 {
+    font-size: 1.5em;
+}
+
+a.buttom {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1.2em;
+    background-color: rebeccapurple;
+    padding: 5px 25px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px 5px #00000099;
+}
+
+a.buttom:hover {
+    background-color: #9acd32;
+    color: #A80DDB;
+    box-shadow: 2px 2px 15px 0px #0000009a;
+}
+
+#vitrine, #catalog, #about{
+    display: none;
+}
+
+section.about{
+    padding: 15px;
+    width: 100%;
+}
+
+div.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.description{
+    background-color: brown;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px;
+    color: #ccc;
+}
+
+.description img{
+    width: 175px;
+    border-radius: 5px;
+}
+
+div.ceo-description h3, div.store-description h3{
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.ceo-description h5{
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.ceo-description p{
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.store-description p{
+    font-size: 1em;
 }
