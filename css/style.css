@@ -22,22 +22,27 @@ div.filtro {
     height: 100%;
 }
 
-div.title-catalog {
+/************************************************************/
+
+section.catalogo{
+    background-color: var(--cor-base);
+}
+
+div.title-sessao {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    background-color: rgb(124, 124, 124);
+    padding: 15px 0 5px 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px;
-    border-color: rgb(255, 255, 255);
+    border-bottom: 1px;
+    border-color: white;
     border-style: solid;
 }
 
-.title-catalog h2 {
+.title-sessao h2 {
     color: white;
 }
 
@@ -45,7 +50,6 @@ div.modelos-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(124, 124, 124);
     padding: 10px;
     padding-top: 40px;
 }
@@ -54,7 +58,7 @@ div.modelo-item {
     width: 200px;
     height: 350px;
     border-radius: 20px;
-    background-color: brown;
+    background-color: var(--cor2);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,6 +69,7 @@ div.modelo-item {
 .modelo-item img {
     width: 150px;
     height: 150px;
+    border-radius: 10px;
 }
 
 .model-description {
@@ -84,43 +89,48 @@ a.buttom {
     color: rgb(255, 255, 255);
     font-weight: 300;
     font-size: 1.2em;
-    background-color: rebeccapurple;
+    background-color: var(--cor-complementar);
     padding: 5px 25px;
     border-radius: 25px;
     box-shadow: 3px 3px 10px 5px #00000099;
 }
 
 a.buttom:hover {
-    background-color: #9acd32;
-    color: #A80DDB;
+    background-color: var(--cor1);
+    color: white;
     box-shadow: 2px 2px 15px 0px #0000009a;
 }
 
+/************************************************************/
+
 section.about{
-    padding: 15px;
+    padding: 15px 0;
     width: 100%;
+    background-color: var(--cor-base);
 }
 
 div.about-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
 }
 
 div.description{
-    background-color: brown;
-    width: 500px;
+    background-color: white;
+    width: 575px;
     height: 300px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     gap: 15px;
-    color: #ccc;
+    color: black;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .description img{
-    width: 175px;
+    width: 225px;
     border-radius: 5px;
 }
 

@@ -1,3 +1,11 @@
+:root{
+    --cor-base: #703C26;
+    --cor-analoga1: #704926;
+    --cor1: #8244c8;
+    --cor2: #707026;
+    --cor-complementar: #267066;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +14,20 @@
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-base);
+    /* position: fixed;
+    top: 0;
+    z-index: 999; */
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px;
+    border-right: 0;
+    border-color: rgba(0, 0, 0, 0.384);
+    border-style: solid;
 }
 
 section.logo {
@@ -38,3 +56,7 @@ section.menu {
 .menu a:hover {
     color: yellowgreen;
 }
+
+/* main{
+    margin-top: 100px;
+} */
