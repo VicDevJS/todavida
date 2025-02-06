@@ -25,7 +25,7 @@ div.title-sessao {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-a.inicio{
+a.inicio {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -39,7 +39,7 @@ a.inicio{
     align-items: center;
 }
 
-.inicio img{
+.inicio img {
     width: 30px;
     height: 30px;
 }
@@ -70,7 +70,7 @@ div.filtro {
 
 /************************ Catálogo **************************/
 
-section.catalogo{
+section.catalogo {
     background-color: var(--cor-base);
     padding-top: 40px;
 }
@@ -133,13 +133,13 @@ a.buttom:hover {
 
 /*********************** Quem somos? ************************/
 
-section.about{
+section.about {
     padding: 15px 0;
     width: 100%;
     background-color: var(--cor-base);
 }
 
-div.about-container{
+div.about-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,7 +147,7 @@ div.about-container{
     padding: 50px 40px;
 }
 
-div.description{
+div.description {
     background-color: white;
     max-width: 575px;
     width: 100%;
@@ -161,36 +161,37 @@ div.description{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.description img{
+.description img {
     width: 225px;
     border-radius: 5px;
 }
 
-div.ceo-description h3, div.store-description h3{
+div.ceo-description h3,
+div.store-description h3 {
     font-size: 1.8em;
     font-weight: bold;
     line-height: 30px;
 }
 
-.ceo-description h5{
+.ceo-description h5 {
     font-size: 0.7em;
     font-weight: bold;
     line-height: 0px;
 }
 
-.ceo-description p{
+.ceo-description p {
     font-size: 1em;
     margin-top: 20px;
 }
 
-.store-description p{
+.store-description p {
     font-size: 1em;
 }
 
 /************************************************************/
 
 /************************* Footer ***************************/
-footer{
+footer {
     background-color: rgb(0, 0, 0);
     border-top: 1px;
     border-right: 0;
@@ -198,64 +199,136 @@ footer{
     border-left: 0;
     border-color: white;
     border-style: solid;
-}
-
-section.formulario{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.formulario img{
-    width: 200px;
-}
-
-div.formulario-contato{
     display: flex;
     flex-direction: column;
-    color: #ffffffbf;
-    border: 1px solid #ffffffbf;
-    border-radius: 20px;
-    padding: 15px;
-    width: 600px;
-    height: 150px;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
 }
 
-.formulario-contato p{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-div.redes{
+section.formulario {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 75px;
+}
+
+.formulario img {
+    max-width: 200px;
+}
+
+div.formulario-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffffbf;
+    border: 1px solid #ffffff60;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 900px;
     width: 100%;
 }
 
-.redes a{
+.formulario-contato p {
+    max-width: 400px;
+    color: #ffffff90;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.form{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    gap: 4px;
+}
+
+div.form #email{
+    max-width: 280px;
+    width: 100%;
+    background-color: black;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+div.form button{
+   width: 160px;
+   border-radius: 8px;
+   border: none;
+   font-size: 13px;
+   font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+ }
+ 
+ :-moz-placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+ }
+ 
+ ::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;  
+ }
+ 
+ :-ms-input-placeholder {  
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;  
+ }
+
+
+div.redes-container {
+    width: 100%;
+    padding: 50px 90px;
+    text-align: left;
+}
+
+div.redes-container h4{
+    font-size: 24px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+div.redes {
+    display: flex;  
+    width: 250px;
+    justify-content: space-between;
+    /* background-color: #23b33a; */
+}   
+
+.redes a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 14px;
+    padding: 10px 12px;
     border-radius: 15px;
 }
 
-.redes a.whatsapp:hover{
+a .rede-img {
+    width: 20px;
+}
+
+.redes a.whatsapp:hover {
     background-image: linear-gradient(to bottom, #52d465, #23b33a);
 }
 
-.redes a.instagram:hover{
-    background-image: linear-gradient(
-        45deg, #833ab4, #fd1d1d, #fcb045);
+.redes a.instagram:hover {
+    background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
 }
 
-a .rede-img{
-    width: 25px;
-}
-
-div.fim{
+div.fim {
     border-top: 1px;
     border-left: 0;
     border-bottom: 0;
@@ -267,4 +340,5 @@ div.fim{
     justify-content: space-around;
     align-items: center;
     padding: 40px 0 20px 0;
+    width: 100%;
 }
