@@ -2,9 +2,24 @@
     --cor-base: #703C26;
     --cor-analoga1: #704926;
     --cor1: #8244c8;
-    --cor2: #707026;
-    --cor-complementar: #267066;
+    --cor2: #2e2828;
+    --cor-complementar: #3a3a3a;
 }
+
+.d-none{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* --bs-breakpoint-xs: 0;
+--bs-breakpoint-sm: 576px;
+--bs-breakpoint-md: 768px;
+--bs-breakpoint-lg: 992px;
+--bs-breakpoint-xl: 1200px;
+--bs-breakpoint-xxl: 1400px; */
 
 * {
     margin: 0;
@@ -21,9 +36,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-base);
-    /* position: fixed;
-    top: 0;
-    z-index: 999; */
     border-top: 0;
     border-left: 0;
     border-bottom: 2px;
@@ -36,13 +48,12 @@ section.logo {
     width: 100px;
     height: 100px;
     margin-left: 70px;
-    border-radius: 10px;
     background-image: url("../image/logo-Toda-Vida-remove.png");
     background-position: center;
     background-size: cover;
 }
 
-section.menu {
+section.menu-desktop {
     display: flex;
     justify-content: space-around;
     max-width: 600px;
@@ -50,15 +61,81 @@ section.menu {
     padding: 15px 0;
 }
 
-.menu a {
+.menu-desktop a {
     color: white;
     text-decoration: none;
 }
 
-.menu a:hover {
+.menu-desktop a:hover {
     color: yellowgreen;
 }
 
-/* main{
-    margin-top: 100px;
-} */
+header .menu-mobile{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 99;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+    background-color: var(--cor-base);
+}
+
+.menu-button{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-button img{
+    width: 25px;
+}
+
+.menu-mobile span{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 22px;
+}
+
+button.menu-hamburguer{
+    display: none;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0px 25px;
+    }
+        
+    section.logo {
+        margin: 0;
+    }
+    
+    section.menu-desktop {
+        display: none;
+    }
+
+    header button.menu-hamburguer{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .menu-mobile{
+        position: absolute;
+        top: 98px;
+        right: 0;
+        z-index: 99;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--cor-base);
+    }
+}

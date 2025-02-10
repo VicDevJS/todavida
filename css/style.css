@@ -71,8 +71,8 @@ div.filtro {
 /************************ Catálogo **************************/
 
 section.catalogo {
-    background-color: var(--cor-base);
-    padding-top: 40px;
+    background-color: #707070;
+    padding: 50px 0;
 }
 
 div.modelos-container {
@@ -134,7 +134,7 @@ a.buttom:hover {
 /*********************** Quem somos? ************************/
 
 section.about {
-    padding: 15px 0;
+    padding: 55px 0;
     width: 100%;
     background-color: var(--cor-base);
 }
@@ -145,6 +145,7 @@ div.about-container {
     align-items: center;
     gap: 40px;
     padding: 50px 40px;
+    margin-top: 40px;
 }
 
 div.description {
@@ -342,3 +343,13 @@ div.fim {
     padding: 40px 0 20px 0;
     width: 100%;
 }
+
+/*************************************************************/
+
+/****************** Responsividade do site *******************/
+
+@media screen and (max-width : 576px){
+    
+}
+
+/*************************************************************/

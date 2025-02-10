@@ -16,12 +16,34 @@
 <body>
     <header>
         <section class="logo"></section>
-        <section class="menu">
+        <section class="menu-desktop">
             <a href="#">Home</a>
             <a href="#catalog">Catálogo</a>
             <a href="#about">Quem somos?</a>
             <a href="#contato">Contato</a>
         </section>
+
+        <button class="menu-hamburguer" onclick="menuOn()">
+            <img src="./image/icons8-cardápio-50.png" alt="">
+        </button>
+        <div id="menu-mobile" class="menu-mobile d-none">
+            <a class="menu-button" href="#">
+                <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
+                <span>Home</span>
+            </a>
+            <a class="menu-button" href="#catalog">
+                <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
+                <span>Catálogo</span>
+            </a>
+            <a class="menu-button" href="#about">
+                <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
+                <span>Quem somos?</span>
+            </a>
+            <a class="menu-button" href="#contato">
+                <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
+                <span>Contato</span>
+            </a>
+        </div>
     </header>
 
     <a href="#" class="inicio">
@@ -48,7 +70,7 @@
                     <img class="d-block w-100" src="./image/img (4).jpg" alt="img4">
                 </div>
             </div>
-            <div class="filtro"></div>
+            <!-- <div class="filtro"></div> -->
         </section> <!--Vitrine-->
 
         <section class="catalogo" id="catalog">
@@ -157,7 +179,7 @@
         </section>
 
         <div class="redes-container">
-            <h4>Contato:</h4>
+            <h4>Contatos:</h4>
             <div class="redes">
                 <a href="#" class="whatsapp">
                     <span>Whatsapp</span>
