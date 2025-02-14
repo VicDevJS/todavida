@@ -27,19 +27,19 @@
             <img src="./image/icons8-cardápio-50.png" alt="">
         </button>
         <div id="menu-mobile" class="menu-mobile d-none">
-            <a class="menu-button" href="#">
+            <a class="menu-button" href="#" onclick="menuOn()">
                 <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
                 <span>Home</span>
             </a>
-            <a class="menu-button" href="#catalog">
+            <a class="menu-button" href="#catalog" onclick="menuOn()">
                 <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
                 <span>Catálogo</span>
             </a>
-            <a class="menu-button" href="#about">
+            <a class="menu-button" href="#about" onclick="menuOn()">
                 <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
                 <span>Quem somos?</span>
             </a>
-            <a class="menu-button" href="#contato">
+            <a class="menu-button" href="#contato" onclick="menuOn()">
                 <img src="./image/icons8-esquerda-50.png" alt="seta para esquerda">
                 <span>Contato</span>
             </a>
@@ -51,26 +51,25 @@
     </a>
 
     <main id="main">
-
         <section class="carousel slide carousel-fade position-relative" id="vitrine" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img class="d-block w-100 " src="./image/img (1).jpg" alt="img1">
+                    <img class="d-block  " src="./image/img (1).jpg" alt="img1">
                 </div>
 
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img class="d-block w-100" src="./image/img (2).jpg" alt="img2">
+                    <img class="d-block " src="./image/img (2).jpg" alt="img2">
                 </div>
 
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img class="d-block w-100" src="./image/img (3).jpg" alt="img3">
+                    <img class="d-block " src="./image/img (3).jpg" alt="img3">
                 </div>
 
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img class="d-block w-100" src="./image/img (4).jpg" alt="img4">
+                    <img class="d-block " src="./image/img (4).jpg" alt="img4">
                 </div>
             </div>
-            <!-- <div class="filtro"></div> -->
+            <div class="filtro"></div>
         </section> <!--Vitrine-->
 
         <section class="catalogo" id="catalog">
@@ -154,7 +153,7 @@
                 <!-- /.ceo-description -->
 
                 <div class="description">
-                    <img src="./image/logo-Toda-Vida.png" alt="imagem da logo da loja">
+                    <img id="ltv" src="./image/logo-Toda-Vida.png" alt="imagem da logo da loja">
                     <div class="store-description">
                         <h3>Toda Vida - Store</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam, velit culpa vero accusantium ratione sed nobis, amet ducimus tempora expedita quidem magni exercitationem quae! Quaerat molestiae laborum incidunt odit!</p>
