@@ -1,6 +1,10 @@
 /* #vitrine, #catalog, #about{
     display: none;
 } */
+#vitrine, #catalog{
+    position: relative;
+    z-index: 7;
+}
 
 div.title-sessao {
     width: 100%;
@@ -29,14 +33,15 @@ a.inicio {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.685);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 .inicio img {
@@ -73,13 +78,33 @@ div.filtro {
 section.catalogo {
     background-color: #707070;
     padding: 50px 0;
+    position: relative;
+}
+
+.catalogo button.setas{
+    background-color: #000000c7;
+    border: none;
+    position: absolute;
+    height: 200px;
+    z-index: 3;
+    top: 250px;
+}
+
+.direita{
+    right: 0;
+}
+
+.esquerda{
+    left: 0;
 }
 
 div.modelos-container {
+    position: relative;
+    left: -110px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 40px;
+    gap: 20px;
+    padding: 50px 30px;
+    width: 4000px;
 }
 
 div.modelo-item {
@@ -361,12 +386,15 @@ div.fim {
         background-color: #707070;
         padding: 50px 0;
     }
-    
+
     div.modelos-container {
+        position: relative;
+        left: inherit;
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        padding: 50px 40px;
+        gap: 20px;
+        padding: 50px 30px;
+        width: 100vw;
     }
     
     div.modelo-item {
@@ -380,6 +408,9 @@ div.fim {
         align-items: center;
         padding: 15px;
     }
+
+    div.resp{display: none;}
+
     
     .modelo-item img {
         width: 150px;
@@ -469,8 +500,8 @@ div.fim {
     }
     
     div.modelo-item {
-        width: 200px;
-        height: 350px;
+        width: 230px;
+        height: 380px;
         border-radius: 20px;
         background-color: var(--cor2);
         display: flex;
@@ -514,6 +545,8 @@ div.fim {
         color: white;
         box-shadow: 2px 2px 15px 0px #0000009a;
     }
+
+    div.resp, div.resp2{display: none;}
 
     
     div.about-container {
