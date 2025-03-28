@@ -100,7 +100,7 @@ section.catalogo {
 
 div.modelos-container {
     position: relative;
-    left: -110px;
+    left: 45px;
     display: flex;
     gap: 20px;
     padding: 50px 30px;
@@ -111,7 +111,8 @@ div.modelo-item {
     width: 200px;
     height: 350px;
     border-radius: 20px;
-    background-color: var(--cor2);
+    /* background-color: var(--cor2); */
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -371,6 +372,32 @@ div.fim {
 /*************************************************************/
 
 /****************** Responsividade do site *******************/
+@media screen and (max-width : 880px){
+    div.about-container {
+        flex-direction: column;
+    }
+    
+    div.description {
+        max-width: 650px;
+        height: 400px;
+        gap: 25px;
+    }
+    
+    .description img {
+        width: 250px;
+    }
+    
+    div.ceo-description h3,
+    div.store-description h3 {
+        font-size: 1.9em;
+        margin-top: 25px;
+    }
+    
+    .ceo-description p {
+        margin-top: 25px;
+    }
+}
+
 @media screen and (max-width : 768px){
     div.carousel-inner {
         max-height: 500px;
