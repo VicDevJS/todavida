@@ -1,7 +1,11 @@
-/* #vitrine, #catalog, #about{
-    display: none;
-} */
-#vitrine, #catalog{
+#vitrine,
+#catalog,
+#about {
+    overflow-x: hidden;
+}
+
+#vitrine,
+#catalog {
     position: relative;
     z-index: 7;
 }
@@ -81,7 +85,7 @@ section.catalogo {
     position: relative;
 }
 
-.catalogo button.setas{
+.catalogo button.setas {
     background-color: #000000c7;
     border: none;
     position: absolute;
@@ -90,29 +94,27 @@ section.catalogo {
     top: 250px;
 }
 
-.direita{
+.direita {
     right: 0;
 }
 
-.esquerda{
+.esquerda {
     left: 0;
 }
 
 div.modelos-container {
     position: relative;
-    left: 45px;
     display: flex;
     gap: 20px;
     padding: 50px 30px;
-    width: 4000px;
+    width: 5000px;
 }
 
 div.modelo-item {
     width: 200px;
     height: 350px;
     border-radius: 20px;
-    /* background-color: var(--cor2); */
-    background-color: white;
+    background-color: var(--cor2);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -264,14 +266,14 @@ div.formulario-contato {
     font-weight: 600;
 }
 
-div.form{
+div.form {
     display: flex;
     max-width: 500px;
     width: 100%;
     gap: 4px;
 }
 
-div.form #email{
+div.form #email {
     max-width: 280px;
     width: 100%;
     background-color: black;
@@ -282,37 +284,37 @@ div.form #email{
     color: #ffffff;
 }
 
-div.form button{
-   width: 160px;
-   border-radius: 8px;
-   border: none;
-   font-size: 13px;
-   font-weight: 600;
+div.form button {
+    width: 160px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 ::-webkit-input-placeholder {
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
- }
- 
- :-moz-placeholder {
+}
+
+:-moz-placeholder {
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
- }
- 
- ::-moz-placeholder {
+}
+
+::-moz-placeholder {
     font-size: 12px;
     font-weight: 600;
-    color: #ffffff;  
- }
- 
- :-ms-input-placeholder {  
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
     font-size: 12px;
     font-weight: 600;
-    color: #ffffff;  
- }
+    color: #ffffff;
+}
 
 
 div.redes-container {
@@ -321,18 +323,18 @@ div.redes-container {
     text-align: left;
 }
 
-div.redes-container h4{
+div.redes-container h4 {
     font-size: 24px;
     margin-left: 10px;
     color: #ffffff;
 }
 
 div.redes {
-    display: flex;  
+    display: flex;
     width: 250px;
     justify-content: space-between;
     /* background-color: #23b33a; */
-}   
+}
 
 .redes a {
     text-decoration: none;
@@ -372,41 +374,41 @@ div.fim {
 /*************************************************************/
 
 /****************** Responsividade do site *******************/
-@media screen and (max-width : 880px){
+@media screen and (max-width : 880px) {
     div.about-container {
         flex-direction: column;
     }
-    
+
     div.description {
         max-width: 650px;
         height: 400px;
         gap: 25px;
     }
-    
+
     .description img {
         width: 250px;
     }
-    
+
     div.ceo-description h3,
     div.store-description h3 {
         font-size: 1.9em;
         margin-top: 25px;
     }
-    
+
     .ceo-description p {
         margin-top: 25px;
     }
 }
 
-@media screen and (max-width : 768px){
+@media screen and (max-width : 768px) {
     div.carousel-inner {
         max-height: 500px;
         height: 100%;
     }
-    
+
     div.carousel-item>img {
         height: 400px;
-        
+
     }
 
     section.catalogo {
@@ -414,16 +416,6 @@ div.fim {
         padding: 50px 0;
     }
 
-    div.modelos-container {
-        position: relative;
-        left: inherit;
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        padding: 50px 30px;
-        width: 100vw;
-    }
-    
     div.modelo-item {
         width: 200px;
         height: 350px;
@@ -436,15 +428,12 @@ div.fim {
         padding: 15px;
     }
 
-    div.resp{display: none;}
-
-    
     .modelo-item img {
         width: 150px;
         height: 150px;
         border-radius: 10px;
     }
-    
+
     .model-description {
         display: flex;
         justify-content: center;
@@ -452,11 +441,11 @@ div.fim {
         flex-direction: column;
         color: white;
     }
-    
+
     .model-description h3 {
         font-size: 1.5em;
     }
-    
+
     a.buttom {
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -467,7 +456,7 @@ div.fim {
         border-radius: 25px;
         box-shadow: 3px 3px 10px 5px #00000099;
     }
-    
+
     a.buttom:hover {
         background-color: #133732;
         color: white;
@@ -477,7 +466,7 @@ div.fim {
     div.about-container {
         margin-top: 0;
     }
-    
+
     div.description {
         height: 660px;
         flex-direction: column;
@@ -485,16 +474,16 @@ div.fim {
         align-items: center;
         gap: 0;
     }
-    
+
     .description img {
         width: 100%;
         border-radius: 10px;
     }
 
-    #ltv{
+    #ltv {
         height: 378px;
     }
-    
+
     div.ceo-description,
     div.store-description {
         padding-left: 5px;
@@ -502,13 +491,13 @@ div.fim {
 }
 
 
-@media screen and (max-width : 576px){
+@media screen and (max-width : 576px) {
     div.carousel-inner {
         max-height: 800px;
         height: 100%;
     }
 
-    div.carousel-item > img {
+    div.carousel-item>img {
         height: 650px;
         width: 180%;
         margin-left: -30%;
@@ -518,14 +507,11 @@ div.fim {
         background-color: #707070;
         padding: 50px 0;
     }
-    
+
     div.modelos-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 50px 40px;
+        left: 65px;
     }
-    
+
     div.modelo-item {
         width: 230px;
         height: 380px;
@@ -537,13 +523,13 @@ div.fim {
         align-items: center;
         padding: 15px;
     }
-    
+
     .modelo-item img {
         width: 150px;
         height: 150px;
         border-radius: 10px;
     }
-    
+
     .model-description {
         display: flex;
         justify-content: center;
@@ -551,11 +537,11 @@ div.fim {
         flex-direction: column;
         color: white;
     }
-    
+
     .model-description h3 {
         font-size: 1.5em;
     }
-    
+
     a.buttom {
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -566,21 +552,18 @@ div.fim {
         border-radius: 25px;
         box-shadow: 3px 3px 10px 5px #00000099;
     }
-    
+
     a.buttom:hover {
         background-color: #133732;
         color: white;
         box-shadow: 2px 2px 15px 0px #0000009a;
     }
 
-    div.resp, div.resp2{display: none;}
-
-    
     div.about-container {
         flex-direction: column;
         margin-top: 0;
     }
-    
+
     div.description {
         max-height: 750px;
         height: 100%;
@@ -589,43 +572,43 @@ div.fim {
         align-items: center;
         gap: 20px;
     }
-    
+
     .description img {
         width: 100%;
         border-radius: 10px;
     }
-    
+
     div.ceo-description,
     div.store-description {
         padding-left: 5px;
     }
-    
+
     section.formulario {
         flex-direction: column;
         padding: 0 10px;
     }
-    
+
     .formulario img {
         max-width: 250px;
     }
-    
+
     div.formulario-contato {
         flex-direction: column;
         padding: 20px;
         gap: 20px;
     }
-    
+
     .formulario-contato p {
         font-size: 15px;
     }
-    
+
     div.redes-container {
         width: 100%;
         padding: 50px;
         text-align: left;
     }
-    
-    div.redes {  
+
+    div.redes {
         width: 100%;
     }
 }
