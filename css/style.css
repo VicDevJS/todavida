@@ -102,6 +102,10 @@ section.catalogo {
     left: 0;
 }
 
+div.modelos{
+    height: 450px;
+}
+
 div.modelos-container {
     position: relative;
     display: flex;
@@ -120,6 +124,20 @@ div.modelo-item {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
+}
+
+div.modelo-item:hover{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    top: -25px;
+    & img{
+        width: 200px;
+        height: 200px;
+    }
+    & a.buttom{
+        padding: 5px 50px;
+    }
 }
 
 .modelo-item img {
